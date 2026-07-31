@@ -79,7 +79,7 @@ def owned_night(night_id: int, user: User, db: Session) -> NightSession:
     night = db.get(NightSession, night_id)
     if not night: raise HTTPException(status_code=404, detail="Night session not found")
     owned_baby(night.baby_id, user, db); return night
-
+# The API server for MindPulse's timer feature.
 app = FastAPI(title="MindPulse API", version="0.1.0")
 app.add_middleware(CORSMiddleware, allow_origins=os.getenv("CORS_ORIGINS", "http://localhost:3000").split(","), allow_credentials=True, allow_methods=["*"], allow_headers=["*"])
 @app.on_event("startup")
