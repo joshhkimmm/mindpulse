@@ -4,11 +4,17 @@ MindPulse is a private, local-first baby sleep companion. It analyzes room sound
 
 It is not a medical device, certified baby monitor, or emergency detection service. Keep the device plugged in, screen-on, and in the foreground when using browser monitoring; check the room directly whenever you are concerned.
 
-## Run the local-first app
+### Judge instructions to run locally
 
-```powershell
-node server.mjs
-```
+1. Open PowerShell and clone the repository:
+   ```powershell
+   git clone [https://github.com/joshhkimmm/mindpulse.git](https://github.com/joshhkimmm/mindpulse.git)
+   cd mindpulse
+2. Install the dependencies:
+   npm install
+3. Start the server:
+   node server.mjs
+4. Open your web browser and go to http://localhost:3000.
 
 Open `http://localhost:3000`, allow microphone access, or use **Run demo**. No package installation is required for local-first mode.
 
