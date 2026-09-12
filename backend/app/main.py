@@ -22,6 +22,7 @@ engine = create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(bind=engine, autoflush=False)
 bearer = HTTPBearer()
 
+# Audio Opensource Edited from it to create our audio in MindPulse https://github.com/mattdiamond/recorderjs 
 class Base(DeclarativeBase): pass
 class User(Base):
     __tablename__ = "users"
