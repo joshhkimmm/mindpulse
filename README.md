@@ -8,7 +8,7 @@ It is not a medical device, certified baby monitor, or emergency detection servi
 
 1. Open PowerShell and clone the repository:
    ```powershell
-   git clone [https://github.com/joshhkimmm/mindpulse.git](https://github.com/joshhkimmm/mindpulse.git)
+   git clone https://github.com/joshhkimmm/mindpulse.git
    cd mindpulse
 2. Install the dependencies:
    npm install
