@@ -24,7 +24,6 @@ MindPulse is deliberately not a medical device. It does not diagnose stress, ass
 - Adapts the routine between focused work and a recovery-first plan.
 - Stores check-in history in local browser storage and visualizes personal patterns.
 - Includes a reset room with usable timers for a somatic reset, visual distance, and physiological sigh.
-- Uses the OpenAI Responses API with GPT-5.6 for an optional privacy-conscious coach reflection, with a no-key local fallback so anyone can demo the project.
 
 ## How we built it
 
@@ -34,7 +33,7 @@ The product is a dependency-free web application:
 - `server.mjs`: a zero-install Node server and optional GPT-5.6 Responses API route.
 - `index.html` and `styles.css`: responsive consumer-product experience for desktop and mobile.
 
-Codex with GPT-5.6 accelerated the architecture, UI implementation, voice-signal workflow, safe product language, testing, and Build Week documentation. The app is intentionally runnable without an API key or a microphone through its demo mode, so judges can test the full product loop immediately.
+We did UI implementation, voice-signal workflow, safe product language, testing, and Build Week documentation. The app is intentionally runnable without an API key or a microphone through its demo mode, so judges can test the full product loop immediately.
 
 ## Challenges we ran into
 
@@ -47,7 +46,6 @@ We also designed for a credible demo environment. Raw microphone input is great 
 - A complete experience rather than a model call with a dashboard attached.
 - Voice-first interaction that is concrete, private by default, and easy to understand.
 - An adaptive plan that visibly changes based on the check-in.
-- Guardrails in the copy, data flow, and GPT-5.6 instructions to keep the product non-diagnostic.
 - A polished responsive interface, local history, and usable reset timers.
 
 ## What we learned
@@ -66,13 +64,20 @@ The best health-adjacent consumer experiences earn trust by being clear about wh
 
 Codex, GPT-5.6, OpenAI Responses API, Node.js, Web Audio API, MediaRecorder API, HTML, CSS, JavaScript, localStorage.
 
-## Judge instructions
+## Judge instructions to run locally
 
-1. Run `node server.mjs` and open `http://localhost:3000`.
-2. Click **Run demo** to see the adaptive routine change with no microphone or API key.
-3. Click **Begin check-in** to try a real, local microphone workflow.
-4. To enable GPT-5.6 reflections, set `OPENAI_API_KEY` and optionally `OPENAI_MODEL=gpt-5.6` before starting the server.
-5. Open **Patterns** and **Reset room** to test history and reset timers.
+1. Open PowerShell and clone the repository:
+git clone https://github.com/joshhkimmm/mindpulse.git
+cd mindpulse
+2. Install the dependencies:
+npm install
+3. Start the development server
+npm run dev
+4. Look at your PowerShell output for the local link (usually http://localhost:3000) and open it in your web browser.
+
+## Judge instructions to run on live web development platform
+
+1. Just go to https://mindpulsee.netlify.app/
 
 ## Submission checklist
 
