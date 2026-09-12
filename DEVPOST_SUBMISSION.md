@@ -62,7 +62,7 @@ The best health-adjacent consumer experiences earn trust by being clear about wh
 
 ## Built with
 
-Codex, GPT-5.6, OpenAI Responses API, Node.js, Web Audio API, MediaRecorder API, HTML, CSS, JavaScript, localStorage.
+Node.js, Web Audio API, MediaRecorder API, HTML, CSS, JavaScript, localStorage, Docker, DSP, PostgreSQL.
 
 ## Judge instructions to run locally
 
