@@ -1,4 +1,5 @@
 """Create the initial derived-event schema."""
+# Imports Alembic's operations module, which lets you make changes to your database schema (like creating or dropping tables).
 from alembic import op
 from app.main import Base
 revision = "0001_initial_schema"
