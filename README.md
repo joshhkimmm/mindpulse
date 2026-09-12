@@ -1,5 +1,4 @@
 # MindPulse
-CURRENT PERMALINK: https://mindpulsee.netlify.app/
 
 MindPulse is a private, local-first baby sleep companion. It analyzes room sound patterns in browser memory, can optionally play a low-volume synthesized response, and never records or uploads raw audio.
 
@@ -12,6 +11,10 @@ node server.mjs
 ```
 
 Open `http://localhost:3000`, allow microphone access, or use **Run demo**. No package installation is required for local-first mode.
+
+## Run on live web development
+
+Go to: https://mindpulsee.netlify.app/
 
 ## Optional accounts and durable progress
 
@@ -42,7 +45,7 @@ backend/            FastAPI + SQLAlchemy API and Alembic initial schema
 docker-compose.yml  Local Postgres + API services
 ```
 
-## Demo script
+## Demo 
 
 1. Open the dashboard and state the local-first privacy boundary.
 2. Click **Run demo** to show a derived state and optional local sound response.
